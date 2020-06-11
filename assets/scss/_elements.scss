@@ -1,0 +1,168 @@
+.about {
+  &-img {
+    margin-bottom: 20px;
+  }
+}
+
+@media all and (min-width: 992px) {
+  .about {
+    &-img {
+      margin-bottom: 0;
+    }
+  }
+}
+.tab-custom-s3 {
+  .nav {
+    &-tabs {
+      border: none;
+    }
+    &-link {
+      border: none;
+      border-radius: 6px;
+      background-color: $primary-color;
+      color: $light;
+      font-size: 12px;
+      font-weight: normal;
+      &.active {
+        background-color: $secondary-color;
+        color: $light;
+      }
+    }
+  }
+}
+
+.card {
+  box-shadow: 0px 4px 6px 0px rgba(60, 28, 148, 0.07);
+  margin-bottom: 30px;
+  &-header {
+    border: none;
+    background: none;
+    position: relative;
+    padding: 0;
+    h5 {
+      font-size: 1.2em;
+    }
+    a {
+      color: #5b53a2;
+      font-weight: 400;
+      padding: 25px 60px 15px 30px;
+      display: block;
+      margin-top: 0;
+      cursor: pointer;
+      .collapsed {
+        padding: 25px 60px 25px 30px;
+      }
+    }
+  }
+  &-body {
+    padding: 0 30px 25px;
+  }
+}
+
+.progress {
+  &-bar {
+    width: 90%;
+    height: 30px;
+    background-color: $light;
+    position: relative;
+  }
+  &-inner {
+    width: 0;
+    height: 30px;
+    background-color: $secondary-color;
+    position: absolute;
+    p {
+      text-align: right;
+      padding-right: 5px;
+      display: none;
+    }
+  }
+}
+
+.portfolio-area {
+  h4 {
+    text-align: center;
+  }
+  &-img {
+    width: 250px;
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+    margin: auto;
+    img {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+    }
+    .overlay {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      position: absolute;
+      top: 100%;
+      left: 0;
+      transition: 1s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &-content {
+        color: #fff;
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media all and (min-width: 992px) {
+  .portfolio-area {
+    &-img {
+      width: 250px;
+      height: 200px;
+    }
+  }
+}
+@media all and (min-width: 1200px) {
+  .portfolio-area {
+    &-img {
+      width: 350px;
+      height: 300px;
+    }
+  }
+}
+.contact {
+  &-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+  }
+}
+
+.footer {
+  &-social {
+    padding-bottom: 30px;
+    li {
+      position: relative;
+      display: inline-block;
+      margin: 0 9px;
+      cursor: pointer;
+      width: 35px;
+      height: 35px;
+      background-color: $primary-color;
+      border-radius: 30px;
+      transition: all 0.5s ease;
+      a {
+        color: $light;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      &:hover {
+        background-color: $secondary-color;
+        a {
+          color: $light;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,130 @@
+/*!  03 - Common css !*/
+
+.gaps {
+  clear: both;
+  height: 20px;
+  display: block;
+  margin: 0;
+  &.size-1x {
+    height: 20px;
+  }
+  &.size-2x {
+    height: 40px;
+  }
+  &.size-3x {
+    height: 60px;
+  }
+  &.size-4x {
+    height: 80px;
+  }
+  &.size-5x {
+    height: 100px;
+  }
+  &.size-6x {
+    height: 120px;
+  }
+  &.size-7x {
+    height: 140px;
+  }
+  &.size-8x {
+    height: 160px;
+  }
+}
+
+.primary-bg {
+  background: $primary-bg;
+}
+.secondary-bg {
+  background: $secondary-bg;
+}
+.italic {
+  font-style: italic;
+  font-size: 1.125em;
+}
+.bold {
+  font-weight: bold;
+}
+
+form {
+  position: relative;
+  z-index: 5;
+  .error {
+    color: $red-color;
+  }
+}
+input,
+textarea {
+  width: 100%;
+  font-size: 1em;
+  font-family: 'Roboto';
+  font-weight: normal;
+  line-height: 2.25;
+  padding: 8px 0 8px 20px;
+  border: none;
+  border-radius: 4px;
+  border: 1px solid rgba(#193c57, 0.15);
+  color: #193c57;
+  &:focus,
+  &:active,
+  &:hover {
+    outline: none;
+  }
+}
+textarea {
+  height: 122px;
+}
+
+.sec {
+  &-head {
+    padding-bottom: 60px;
+  }
+  &-img {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+@media all and (min-width: 768px) {
+  .sec-img {
+    max-width: 350px;
+  }
+}
+@media all and (min-width: 992px) {
+  .sec-img {
+    max-width: 100%;
+  }
+}
+
+ul li {
+  padding-bottom: 10px;
+}
+
+.input {
+  &-item {
+    position: relative;
+  }
+}
+
+.input-item .input-bordered ~ .error,
+.cta-field .input-bordered ~ .error {
+  position: absolute;
+  right: -10px;
+  top: -15px;
+  background: $red-color;
+  color: $light;
+  font-size: 11px;
+  line-height: 18px;
+  padding: 2px 10px;
+  border-radius: 2px;
+  &:after {
+    position: absolute;
+    content: '';
+    height: 0;
+    width: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid $red-color;
+    border-bottom: 5px solid transparent;
+    bottom: -5px;
+    left: 3px;
+  }
+}

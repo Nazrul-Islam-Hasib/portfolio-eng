@@ -1,0 +1,160 @@
+/*!  02 - Reset !*/
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  line-height: 1.75;
+  letter-spacing: 0.025em;
+  font-weight: normal;
+  color: $dark;
+  background-color: $light;
+  min-width: 320px;
+}
+@media all and (min-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+}
+@media all and (min-width: 1400px) {
+  body {
+    font-size: 16px;
+  }
+}
+html,
+body {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: 'Helvetica Neue LT';
+  line-height: 1.33;
+  font-weight: 600;
+}
+h1,
+.h1 {
+  font-size: 2.93em;
+}
+h2,
+.h2 {
+  font-size: 2.3em;
+}
+h3,
+.h3 {
+  font-size: 1.87em;
+}
+h4,
+.h4 {
+  font-size: 1.6em;
+}
+h5,
+.h5 {
+  font-size: 1.33em;
+}
+h6,
+.h6 {
+  font-size: 1.07em;
+}
+p {
+  font-size: 1em;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+p {
+  &.color-secondary {
+    color: $secondary-color;
+  }
+  &.color-primary {
+    color: $primary-color;
+  }
+}
+.lead {
+  font-size: 1.1em;
+  line-height: 1.8;
+  font-weight: normal;
+}
+
+@media all and (min-width: 576px) {
+  .lead {
+    font-size: 1.2em;
+  }
+}
+
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  li {
+    list-style: none;
+  }
+}
+
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child,
+p:last-child,
+ul:last-child,
+ol:last-child,
+table:last-child {
+  margin-bottom: 0;
+}
+
+.relative {
+  position: relative;
+}
+img {
+  max-width: 100%;
+}
+b,
+strong {
+  font-weight: 600;
+}
+a {
+  outline: 0;
+  transition: all 0.5s;
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+  }
+}
+button {
+  cursor: pointer;
+  transition: all 0.5s;
+  &:focus {
+    outline: 0;
+  }
+}
+.container {
+  position: relative;
+  z-index: 5;
+}
+.overflow {
+  overflow: hidden;
+}

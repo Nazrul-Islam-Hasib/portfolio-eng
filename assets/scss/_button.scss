@@ -1,0 +1,33 @@
+.btn {
+  font-family: 'Montserrat';
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 500;
+  padding: 10px 50px;
+  text-align: center;
+  color: $light;
+  background-color: $secondary-color;
+  max-width: 100%;
+  transition: all 0.5s;
+  position: relative;
+  border-radius: 5px;
+  z-index: 2;
+  &-contact {
+    padding: 8px 100px;
+    text-transform: uppercase;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    outline: 0;
+    box-shadow: none;
+    background-color: $primary-color;
+    color: $light;
+  }
+}
+@media all and (min-width: 576px) {
+  .btn {
+    font-size: 14px;
+    line-height: 36px;
+  }
+}
