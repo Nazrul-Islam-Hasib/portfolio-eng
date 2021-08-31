@@ -193,7 +193,7 @@
     jQuery('.pi2').animate({ width: '80%' }, 2000);
     jQuery('.pi3').animate({ width: '70%' }, 2000);
     jQuery('.pi4').animate({ width: '60%' }, 2000);
-    jQuery('.pi5').animate({ width: '40%' }, 2000);
+    jQuery('.pi5').animate({ width: '70%' }, 2000);
   }
   jQuery('.skills').click(function () {
     progressShow();
